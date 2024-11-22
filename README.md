@@ -1,5 +1,6 @@
 # Token-Transfer-from-only-owner
-pragma solidity ^0.8.0;
+ '''
+ pragma solidity ^0.8.0;
 contract Token {
 address public owner;
 mapping(address => uint256) public balances;
@@ -19,3 +20,4 @@ balances[_to] += _value;
 emit Transfer(owner, _to, _value);
 }
 }
+'''
